@@ -39,6 +39,10 @@ jobs:
           bundle exec rails db:create
           bundle exec rails db:migrate
           RAILS_ENV=test bundle exec rake
+          # However you run your tests to generate code coverage
+      - name: Run my tests
+        run: |
+          bundle exec rspec specs/
 
   rubocop:
     runs-on: ubuntu-latest
