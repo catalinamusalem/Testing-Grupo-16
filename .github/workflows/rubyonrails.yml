@@ -43,10 +43,9 @@ jobs:
   lint:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-      - name: Setup environment
-        uses: ./.github/actions/setup
+      - uses: actions/checkout@v2
+      - name: Setup Ruby
+        uses: actions/setup-ruby@v1
         with:
           ruby-version: 3.1.2
       # Add or replace any other lints here
