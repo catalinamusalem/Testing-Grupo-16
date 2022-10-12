@@ -1,10 +1,10 @@
-# Proyecto DCCinema Grupo X
-#### Entrega: X
-#### Url Heroku:
+# Proyecto DCCinema Grupo 16
+#### Entrega: 1
+#### Url Heroku: https://powerful-wildwood-80309.herokuapp.com/
 
 
 ### Logros
- Dejar explicito lo que no lograron hacer de la entrega o si lograron hacer todo lo pedido
+ Se hizo todo lo explicitado en entregas minimas. 
 
 ### Consideraciones generales para la correcion
 Cualquier detalle que consideren que puede ser útil para el corrector. Ej:
