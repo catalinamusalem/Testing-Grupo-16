@@ -39,9 +39,6 @@ jobs:
           bundle exec rails db:create
           bundle exec rails db:migrate
           RAILS_ENV=test bundle exec rake
-      - name: Build and run test
-        run: |
-          bundle exec rspec
       - name: Add code coverage comment
         uses: romeovs/lcov-reporter-action@v0.2.16
         with:
