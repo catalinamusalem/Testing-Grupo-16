@@ -13,5 +13,6 @@ Para corregir localmente es necesario configurar las variables de entorno. Para 
 Este archivo debe contener lo siguiente: 
 
 DB_USER: '{user}'
+
 DB_PASSWORD: '{password}'
 
