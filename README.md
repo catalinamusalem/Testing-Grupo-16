@@ -7,6 +7,11 @@
  Se hizo todo lo explicitado en entregas minimas. 
 
 ### Consideraciones generales para la correcion
-Cualquier detalle que consideren que puede ser útil para el corrector. Ej:
-bugs detectados, pasos adicionales de setup, cosas que no sean tan claras relacionadas con el uso de su aplicacion, entre otros
+
+Para corregir localmente es necesario configurar las variables de entorno. Para esto se debera crear un archivo llamado local_env.yml dentro de la carpeta config.
+
+Este archivo debe contener lo siguiente: 
+
+DB_USER: '{user}'
+DB_PASSWORD: '{password}'
 
