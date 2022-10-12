@@ -33,17 +33,13 @@ jobs:
           ruby-version: 3.1.2
       - name: Build and run test
         run: |
-          sudo apt-get -yqq install libpq-dev
-          gem install bundler:1.17.3
-          bundle install --jobs 4 --retry 3
-          bundle exec rails db:create
-          bundle exec rails db:migrate
-          RAILS_ENV=test bundle exec rake
-          # However you run your tests to generate code coverage
-      - name: Run simple coverage
-        run: |
-          bundle install rspec
-          bundle exec rspec specs/
+          bundle exec rspec
+      - name: Add code coverage comment
+        uses: romeovs/lcov-reporter-action@v0.2.16
+        with:
+          lcov-file: ./coverage/lcov/ruby-simplecov.lcov
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+
 
   rubocop:
     runs-on: ubuntu-latest
