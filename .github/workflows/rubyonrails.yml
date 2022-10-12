@@ -39,11 +39,15 @@ jobs:
           bundle exec rails db:create
           bundle exec rails db:migrate
           RAILS_ENV=test bundle exec rake
-      - name: Add code coverage comment
-        uses: romeovs/lcov-reporter-action@v0.2.16
+      - name: Ruby SimpleCov
+        # You may pin to the exact commit or the version.
+        # uses: d1ceward/ruby-simplecov-action@76a6851a3de41b204e55893e6e2afe9982ecb291
+        uses: d1ceward/ruby-simplecov-action@v0.1.0
         with:
-          lcov-file: ./coverage/lcov/ruby-simplecov.lcov
-          github-token: ${{ secrets.GITHUB_TOKEN }}
+          # Github generated token
+          token: ${{ secrets.GITHUB_TOKEN }}
+          # Threshold
+          threshold: 100
 
 
   rubocop:
