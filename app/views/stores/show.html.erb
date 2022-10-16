@@ -1,0 +1,19 @@
+<main class="container">
+  <%= link_to sanitize("&larr; Back to products"), stores_path %>
+  <div class="header">
+    <h1>Name: </h1>
+      <%= @store.name %>
+    <h1>Price: </h1>
+      <%= @store.price %>
+    <h1>Category: </h1>
+    
+      <%= @store.category %>
+    <h1>Weight: </h1>
+    
+      <%= @store.weight %>
+    <h1>Volume: </h1>
+    
+      <%= @store.volume %>
+      </h1>
+  </div>
+</main>

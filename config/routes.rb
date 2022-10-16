@@ -9,4 +9,5 @@ Rails.application.routes.draw do
   get '/', to: 'movie#home', as: 'home'
   get 'movies/list', to: 'movie#list_by_date', as: 'movies_by_date'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  resources :stores
 end

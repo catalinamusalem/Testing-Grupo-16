@@ -1,0 +1,18 @@
+<%= simple_form_for store, html: { class: "store form" } do |f| %>
+    <% if store.errors.any? %>
+      <div class="error-message">
+        <%= store.errors.full_messages.to_sentence.capitalize %>
+      </div>
+    <% end %>
+  
+    <%= f.input :name, input_html: { autofocus: true } %>
+    <%= f.input :price, input_html: { autofocus: true } %>
+
+    <%= f.input :category, :collection => ["Drink", "Food", "Souvenir"],
+    :input_html => {:class => 'dropdown'}, :label => 'Category    ', prompt: "Choose From List" %>
+    <h1>If product category is food introduce weight in grams:</h1>
+    <%= f.input :weight, input_html: { autofocus: true } %>
+    <h1>If product category is drink introduce volume in cc:</h1>
+    <%= f.input :volume, input_html: { autofocus: true } %>
+    <%= f.submit 'Save'  %>
+  <% end %>

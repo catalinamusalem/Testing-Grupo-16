@@ -139,6 +139,8 @@ GEM
       net-protocol
     netrc (0.11.0)
     nio4r (2.5.8)
+    nokogiri (1.13.8-arm64-darwin)
+      racc (~> 1.4)
     nokogiri (1.13.8-x64-mingw-ucrt)
       racc (~> 1.4)
     nokogiri (1.13.8-x86_64-linux)
@@ -223,6 +225,9 @@ GEM
       rexml (~> 3.2, >= 3.2.5)
       rubyzip (>= 1.2.2, < 3.0)
       websocket (~> 1.0)
+    simple_form (5.1.0)
+      actionpack (>= 5.2)
+      activemodel (>= 5.2)
     simplecov (0.21.2)
       docile (~> 1.1)
       simplecov-html (~> 0.11)
@@ -272,6 +277,7 @@ GEM
     zeitwerk (2.6.1)
 
 PLATFORMS
+  arm64-darwin-21
   x64-mingw-ucrt
   x86_64-linux
 
@@ -289,6 +295,7 @@ DEPENDENCIES
   rubocop-rails
   sassc-rails
   selenium-webdriver
+  simple_form (~> 5.1.0)
   simplecov
   sprockets-rails
   stimulus-rails

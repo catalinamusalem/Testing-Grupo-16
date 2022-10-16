@@ -1,0 +1,9 @@
+<main class="container">
+  <%= link_to sanitize("&larr; Back to products"), stores_path %>
+
+  <div class="header">
+    <h1>New Product</h1>
+  </div>
+
+  <%= render "form", store: @store %>
+</main>
