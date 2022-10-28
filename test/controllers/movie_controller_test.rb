@@ -22,7 +22,9 @@ class MovieControllerTest < ActionDispatch::IntegrationTest
   end
 
   test 'should create movie time ' do
-    post new_movie_time_url, params: { movie_time: { movie_id: 1, time: 'TANDA', date_start: '2020-11-10', date_end: '2020-11-12', room: 5 } }
+    post new_movie_time_url,
+         params: { movie_time: { movie_id: 1, time: 'TANDA', date_start: '2020-11-10',
+                                 date_end: '2020-11-12', room: 5 } }
     assert_response :redirect
   end
 
