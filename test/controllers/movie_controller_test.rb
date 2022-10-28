@@ -16,6 +16,16 @@ class MovieControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
   end
 
+  test 'should create movie' do
+    post movie_new_url, params: { movie: { title: 'New Movie', image: 'https://www.otroscines.com/images/fotos/las-horas-mas-oscuras-critica-655.jpg' } }
+    assert_response :redirect
+  end
+
+  test 'should create movie time ' do
+    post new_movie_time_url, params: { movie_time: { movie_id: 1, time: 'TANDA', date_start: '2020-11-10', date_end: '2020-11-12', room: 5 } }
+    assert_response :redirect
+  end
+
   test 'should notice missing movie' do
     post new_movie_time_url, params: { movie_time:
       {
