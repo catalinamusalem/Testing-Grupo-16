@@ -82,4 +82,8 @@ class StoresController < ApplicationController
   def store_params
     params.require(:store).permit(:name, :price, :category, :volume, :weight)
   end
+  def list_by_category
+    @category = params[:category]
+    @filter = Store.includes(:category).where(['category = ?', @category])
+  end
 end
