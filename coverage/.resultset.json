@@ -1,7 +1,7 @@
 {
   "Minitest": {
     "coverage": {
-      "/Users/catalina/Desktop/testing/Testing-Grupo-16/test/controllers/movie_controller_test.rb": {
+      "/home/rociomartinez/Testing-Grupo-16/test/controllers/movie_controller_test.rb": {
         "lines": [
           null,
           null,
@@ -11,18 +11,141 @@
           1,
           null,
           1,
+          10,
+          10,
+          null,
+          null,
+          null,
+          1,
           1,
           1,
           null,
           null,
+          null,
           1,
           1,
+          0,
+          0,
+          0,
+          null,
+          null,
+          1,
+          1,
+          0,
+          0,
+          null,
+          null,
+          null,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          null,
+          null,
+          1,
+          1,
+          0,
+          0,
+          null,
+          null,
+          1,
+          1,
+          0,
+          0,
+          null,
+          null,
+          1,
+          1,
+          0,
+          0,
+          0,
+          null,
+          null,
+          null,
+          1,
+          1,
+          0,
+          null,
+          null,
+          1,
+          1,
+          0,
+          null,
+          null,
+          1,
+          1,
+          0,
+          0,
+          0,
+          null,
+          null
+        ]
+      },
+      "/home/rociomartinez/Testing-Grupo-16/test/controllers/reservas_controller_test.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          null,
+          1,
+          1,
+          6,
+          6,
+          null,
+          null,
+          null,
+          null,
+          1,
+          6,
+          6,
+          6,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          1,
+          1,
+          null,
           1,
           null,
           null
         ]
       },
-      "/Users/catalina/Desktop/testing/Testing-Grupo-16/test/controllers/reservas_controller_test.rb": {
+      "/home/rociomartinez/Testing-Grupo-16/test/controllers/stores_controller_test.rb": {
         "lines": [
           null,
           null,
@@ -34,6 +157,36 @@
           1,
           null,
           null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
           null,
           null,
           1,
@@ -45,25 +198,32 @@
           1,
           1,
           null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
           null,
           null,
           null
         ]
       },
-      "/Users/catalina/Desktop/testing/Testing-Grupo-16/test/controllers/stores_controller_test.rb": {
-        "lines": [
-          null,
-          null,
-          1,
-          null,
-          1,
-          null,
-          null,
-          null,
-          null
-        ]
-      },
-      "/Users/catalina/Desktop/testing/Testing-Grupo-16/test/models/movie_test.rb": {
+      "/home/rociomartinez/Testing-Grupo-16/test/models/movie_test.rb": {
         "lines": [
           null,
           null,
@@ -93,7 +253,7 @@
           null
         ]
       },
-      "/Users/catalina/Desktop/testing/Testing-Grupo-16/test/models/movie_time_test.rb": {
+      "/home/rociomartinez/Testing-Grupo-16/test/models/movie_time_test.rb": {
         "lines": [
           null,
           null,
@@ -130,7 +290,7 @@
           null
         ]
       },
-      "/Users/catalina/Desktop/testing/Testing-Grupo-16/test/models/reserva_test.rb": {
+      "/home/rociomartinez/Testing-Grupo-16/test/models/reserva_test.rb": {
         "lines": [
           null,
           null,
@@ -213,7 +373,7 @@
           null
         ]
       },
-      "/Users/catalina/Desktop/testing/Testing-Grupo-16/test/models/room_test.rb": {
+      "/home/rociomartinez/Testing-Grupo-16/test/models/room_test.rb": {
         "lines": [
           null,
           null,
@@ -223,7 +383,7 @@
           null
         ]
       },
-      "/Users/catalina/Desktop/testing/Testing-Grupo-16/test/models/store_test.rb": {
+      "/home/rociomartinez/Testing-Grupo-16/test/models/store_test.rb": {
         "lines": [
           null,
           null,
@@ -267,7 +427,7 @@
           null
         ]
       },
-      "/Users/catalina/Desktop/testing/Testing-Grupo-16/app/models/movie_time.rb": {
+      "/home/rociomartinez/Testing-Grupo-16/app/models/movie_time.rb": {
         "lines": [
           null,
           null,
@@ -286,18 +446,18 @@
           1,
           null,
           1,
-          17,
+          22,
           null,
-          17,
+          22,
           1,
           null,
           null,
           null,
-          17,
+          22,
           null,
-          17,
+          22,
           null,
-          17,
+          22,
           2,
           null,
           null,
@@ -307,7 +467,7 @@
           null
         ]
       },
-      "/Users/catalina/Desktop/testing/Testing-Grupo-16/app/models/application_record.rb": {
+      "/home/rociomartinez/Testing-Grupo-16/app/models/application_record.rb": {
         "lines": [
           null,
           null,
@@ -317,7 +477,7 @@
           null
         ]
       },
-      "/Users/catalina/Desktop/testing/Testing-Grupo-16/app/models/movie.rb": {
+      "/home/rociomartinez/Testing-Grupo-16/app/models/movie.rb": {
         "lines": [
           null,
           null,
@@ -331,7 +491,7 @@
           null
         ]
       },
-      "/Users/catalina/Desktop/testing/Testing-Grupo-16/app/models/reserva.rb": {
+      "/home/rociomartinez/Testing-Grupo-16/app/models/reserva.rb": {
         "lines": [
           null,
           null,
@@ -349,11 +509,11 @@
           1,
           null,
           1,
-          27,
+          33,
           null,
           null,
-          27,
-          7,
+          33,
+          10,
           null,
           null,
           null,
@@ -361,7 +521,7 @@
           null
         ]
       },
-      "/Users/catalina/Desktop/testing/Testing-Grupo-16/app/models/room.rb": {
+      "/home/rociomartinez/Testing-Grupo-16/app/models/room.rb": {
         "lines": [
           null,
           null,
@@ -369,30 +529,133 @@
           null
         ]
       },
-      "/Users/catalina/Desktop/testing/Testing-Grupo-16/app/models/store.rb": {
+      "/home/rociomartinez/Testing-Grupo-16/app/models/store.rb": {
         "lines": [
           null,
           null,
           null,
           1,
+          1,
+          15,
+          1,
+          14,
+          1,
+          null,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null
+        ]
+      },
+      "/home/rociomartinez/Testing-Grupo-16/app/controllers/reservas_controller.rb": {
+        "lines": [
+          null,
+          null,
+          null,
+          1,
+          1,
+          0,
+          0,
+          0,
+          null,
+          null,
           1,
           6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          null,
+          6,
+          null,
+          6,
+          null,
+          null,
+          null,
           1,
-          5,
+          6,
+          2,
+          4,
           1,
+          null,
+          null,
+          3,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          2,
+          0,
+          null,
+          null,
+          2,
+          2,
           null,
           null,
           null,
           null,
           1,
-          1,
-          1,
-          1,
+          6,
+          6,
+          null,
+          0,
+          null,
+          null
+        ]
+      },
+      "/home/rociomartinez/Testing-Grupo-16/app/controllers/application_controller.rb": {
+        "lines": [
+          null,
+          null,
           1,
           null
         ]
       },
-      "/Users/catalina/Desktop/testing/Testing-Grupo-16/app/controllers/movie_controller.rb": {
+      "/home/rociomartinez/Testing-Grupo-16/app/helpers/application_helper.rb": {
+        "lines": [
+          null,
+          null,
+          null,
+          1,
+          null
+        ]
+      },
+      "/home/rociomartinez/Testing-Grupo-16/app/helpers/movie_helper.rb": {
+        "lines": [
+          null,
+          null,
+          null,
+          1,
+          null
+        ]
+      },
+      "/home/rociomartinez/Testing-Grupo-16/app/helpers/reservas_helper.rb": {
+        "lines": [
+          null,
+          null,
+          null,
+          1,
+          null
+        ]
+      },
+      "/home/rociomartinez/Testing-Grupo-16/app/helpers/stores_helper.rb": {
+        "lines": [
+          null,
+          null,
+          null,
+          1,
+          null
+        ]
+      },
+      "/home/rociomartinez/Testing-Grupo-16/app/controllers/stores_controller.rb": {
         "lines": [
           null,
           null,
@@ -405,140 +668,126 @@
           null,
           null,
           1,
-          0,
-          0,
-          0,
-          0,
-          0,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          3,
+          null,
+          null,
+          null,
+          3,
+          1,
+          1,
+          null,
+          null,
+          null,
+          3,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          3,
+          null,
+          3,
+          3,
           null,
           0,
           null,
           null,
           null,
           1,
-          0,
           null,
-          0,
-          0,
-          0,
+          1,
+          6,
+          6,
           null,
           0,
           null,
           null,
           null,
           1,
-          0,
-          0,
+          1,
+          1,
           null,
           null,
+          1,
+          null,
+          1,
+          9,
+          null,
+          null,
+          1,
+          25,
           null,
           null
         ]
       },
-      "/Users/catalina/Desktop/testing/Testing-Grupo-16/app/controllers/application_controller.rb": {
-        "lines": [
-          null,
-          null,
-          1,
-          null
-        ]
-      },
-      "/Users/catalina/Desktop/testing/Testing-Grupo-16/app/helpers/application_helper.rb": {
-        "lines": [
-          null,
-          null,
-          null,
-          1,
-          null
-        ]
-      },
-      "/Users/catalina/Desktop/testing/Testing-Grupo-16/app/helpers/movie_helper.rb": {
-        "lines": [
-          null,
-          null,
-          null,
-          1,
-          null
-        ]
-      },
-      "/Users/catalina/Desktop/testing/Testing-Grupo-16/app/helpers/reservas_helper.rb": {
-        "lines": [
-          null,
-          null,
-          null,
-          1,
-          null
-        ]
-      },
-      "/Users/catalina/Desktop/testing/Testing-Grupo-16/app/helpers/stores_helper.rb": {
-        "lines": [
-          null,
-          null,
-          null,
-          1,
-          null
-        ]
-      },
-      "/Users/catalina/Desktop/testing/Testing-Grupo-16/app/controllers/reservas_controller.rb": {
+      "/home/rociomartinez/Testing-Grupo-16/app/controllers/movie_controller.rb": {
         "lines": [
           null,
           null,
           null,
           1,
           1,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          2,
+          2,
+          2,
           0,
           0,
-          0,
-          null,
-          null,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          1,
-          null,
-          1,
-          null,
-          null,
-          null,
-          1,
-          1,
-          1,
-          0,
-          0,
-          null,
           null,
           0,
           null,
           null,
           null,
-          null,
-          null,
-          1,
           1,
           0,
           null,
-          null,
-          1,
-          1,
-          null,
-          null,
-          null,
-          null,
-          1,
-          1,
-          1,
+          0,
+          0,
+          0,
           null,
           0,
+          null,
+          null,
+          null,
+          1,
+          0,
+          0,
+          null,
+          null,
           null,
           null
         ]
       }
     },
-    "timestamp": 1666976015
+    "timestamp": 1666993401
   }
 }
