@@ -14,7 +14,7 @@
       <img src="./assets/0.12.3/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2022-10-28T18:43:21-03:00">2022-10-28T18:43:21-03:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2022-10-28T19:08:54-03:00">2022-10-28T19:08:54-03:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -227,7 +227,7 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#62d4e8751422bf82dd1b83f39e0c49aba9595be7" class="src_link" title="test/controllers/movie_controller_test.rb">test/controllers/movie_controller_test.rb</a></td>
             <td class="red strong cell--number t-file__coverage">56.25 %</td>
-            <td class="cell--number">78</td>
+            <td class="cell--number">96</td>
             <td class="cell--number">48</td>
             <td class="cell--number">27</td>
             <td class="cell--number">21</td>
@@ -249,7 +249,7 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#69ccf11be2a109857d3ef82567ffd032d66cb8dc" class="src_link" title="test/controllers/stores_controller_test.rb">test/controllers/stores_controller_test.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">74</td>
+            <td class="cell--number">92</td>
             <td class="cell--number">45</td>
             <td class="cell--number">45</td>
             <td class="cell--number">0</td>
@@ -4525,40 +4525,40 @@
 
             
 
-            <code class="ruby">    post create_movie_time_url, params: { movie_time: { movie_id: movie.id, time: &#39;12:00&#39;, date_start: &#39;2021-12-12&#39;, date_end: &#39;2021-12-12&#39;, room: &#39;A&#39; } }</code>
+            <code class="ruby">    post create_movie_time_url, params: { movie_time:</code>
           </li>
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="37">
+          <li class="never" data-hits="" data-linenumber="37">
             
             
 
             
 
-            <code class="ruby">    assert_response :redirect</code>
+            <code class="ruby">      {</code>
           </li>
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="38">
+          <li class="never" data-hits="" data-linenumber="38">
             
             
 
             
 
-            <code class="ruby">    assert_equal &#39;Pelicula asignada con exito&#39;, flash[:notice]</code>
+            <code class="ruby">        movie_id: movie.id,</code>
           </li>
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="39">
+          <li class="never" data-hits="" data-linenumber="39">
             
             
 
             
 
-            <code class="ruby">    assert_not_nil MovieTime.find_by(movie_id: movie.id)</code>
+            <code class="ruby">        time: &#39;12:00&#39;,</code>
           </li>
         </div>
       
@@ -4569,7 +4569,7 @@
 
             
 
-            <code class="ruby">  end</code>
+            <code class="ruby">        date_start: &#39;2021-12-12&#39;,</code>
           </li>
         </div>
       
@@ -4580,29 +4580,29 @@
 
             
 
-            <code class="ruby"></code>
+            <code class="ruby">        date_end: &#39;2021-12-12&#39;,</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="42">
-            <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="42">
+            
             
 
             
 
-            <code class="ruby">  test &#39;should notice missing movie&#39; do</code>
+            <code class="ruby">        room: &#39;A&#39;</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="43">
-            <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="43">
+            
             
 
             
 
-            <code class="ruby">    post create_movie_time_url, params: { movie_time: { movie_id: &#39;&#39;, time: &#39;12:00&#39;, date_start: &#39;2021-12-12&#39;, date_end: &#39;2021-12-12&#39;, room: &#39;A&#39; } }</code>
+            <code class="ruby">      } }</code>
           </li>
         </div>
       
@@ -4624,18 +4624,18 @@
 
             
 
-            <code class="ruby">    assert_equal &#39;Falta elegir una pelicula&#39;, flash[:notice]</code>
+            <code class="ruby">    assert_equal &#39;Pelicula asignada con exito&#39;, flash[:notice]</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="46">
+          <li class="missed" data-hits="0" data-linenumber="46">
             
             
 
             
 
-            <code class="ruby">  end</code>
+            <code class="ruby">    assert_not_nil MovieTime.find_by(movie_id: movie.id)</code>
           </li>
         </div>
       
@@ -4646,18 +4646,18 @@
 
             
 
-            <code class="ruby"></code>
+            <code class="ruby">  end</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="48">
-            <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="48">
+            
             
 
             
 
-            <code class="ruby">  test &#39;should notice missing date_start&#39; do</code>
+            <code class="ruby"></code>
           </li>
         </div>
       
@@ -4668,29 +4668,29 @@
 
             
 
-            <code class="ruby">    movie = Movie.create(title: &#39;La ciudad perdida&#39;, image: &#39;https://www.ecartelera.com/carteles/17000/17009/001_p.jpg&#39;)</code>
+            <code class="ruby">  test &#39;should notice missing movie&#39; do</code>
           </li>
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="50">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="50">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">    post create_movie_time_url, params: { movie_time: { movie_id: movie.id, time: &#39;12:00&#39;, date_start: &#39;&#39;, date_end: &#39;2021-12-12&#39;, room: &#39;A&#39; } }</code>
+            
+
+            <code class="ruby">    post create_movie_time_url, params: { movie_time: </code>
           </li>
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="51">
+          <li class="never" data-hits="" data-linenumber="51">
             
             
 
             
 
-            <code class="ruby">    assert_equal &#39;Falta la fecha inicial&#39;, flash[:notice]</code>
+            <code class="ruby">      { </code>
           </li>
         </div>
       
@@ -4701,7 +4701,7 @@
 
             
 
-            <code class="ruby">  end</code>
+            <code class="ruby">        movie_id: &#39;&#39;, time: &#39;12:00&#39;, date_start: &#39;2021-12-12&#39;, date_end: &#39;2021-12-12&#39;, room: &#39;A&#39;</code>
           </li>
         </div>
       
@@ -4712,45 +4712,12 @@
 
             
 
-            <code class="ruby"></code>
+            <code class="ruby">      } }</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="54">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">  test &#39;should notice missing date_end&#39; do</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="55">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    movie = Movie.create(title: &#39;La ciudad perdida&#39;, image: &#39;https://www.ecartelera.com/carteles/17000/17009/001_p.jpg&#39;)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="missed" data-hits="0" data-linenumber="56">
-            
-            
-
-            
-
-            <code class="ruby">    post create_movie_time_url, params: { movie_time: { movie_id: movie.id, time: &#39;12:00&#39;, date_start: &#39;2021-12-12&#39;, date_end: &#39;&#39;, room: &#39;A&#39; } }</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="missed" data-hits="0" data-linenumber="57">
+          <li class="missed" data-hits="0" data-linenumber="54">
             
             
 
@@ -4761,18 +4728,18 @@
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="58">
+          <li class="missed" data-hits="0" data-linenumber="55">
             
             
 
             
 
-            <code class="ruby">    assert_equal &#39;Falta la fecha final&#39;, flash[:notice]</code>
+            <code class="ruby">    assert_equal &#39;Falta elegir una pelicula&#39;, flash[:notice]</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="59">
+          <li class="never" data-hits="" data-linenumber="56">
             
             
 
@@ -4783,7 +4750,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="60">
+          <li class="never" data-hits="" data-linenumber="57">
             
             
 
@@ -4794,35 +4761,68 @@
         </div>
       
         <div>
+          <li class="covered" data-hits="1" data-linenumber="58">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  test &#39;should notice missing date_start&#39; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="59">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    movie = Movie.create(title: &#39;La ciudad perdida&#39;, image: &#39;https://www.ecartelera.com/carteles/17000/17009/001_p.jpg&#39;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="60">
+            
+            
+
+            
+
+            <code class="ruby">    post create_movie_time_url, params: { movie_time: </code>
+          </li>
+        </div>
+      
+        <div>
           <li class="never" data-hits="" data-linenumber="61">
             
             
 
             
 
-            <code class="ruby">  # test list by date</code>
+            <code class="ruby">      { </code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="62">
-            <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="62">
+            
             
 
             
 
-            <code class="ruby">  test &#39;should list by date&#39; do</code>
+            <code class="ruby">        movie_id: movie.id, time: &#39;12:00&#39;, date_start: &#39;&#39;, date_end: &#39;2021-12-12&#39;, room: &#39;A&#39;</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="63">
-            <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="63">
+            
             
 
             
 
-            <code class="ruby">    get list_by_date_url</code>
+            <code class="ruby">      } }</code>
           </li>
         </div>
       
@@ -4833,7 +4833,7 @@
 
             
 
-            <code class="ruby">    assert_response :success</code>
+            <code class="ruby">    assert_equal &#39;Falta la fecha inicial&#39;, flash[:notice]</code>
           </li>
         </div>
       
@@ -4866,7 +4866,7 @@
 
             
 
-            <code class="ruby">  test &#39;should list by date with params&#39; do</code>
+            <code class="ruby">  test &#39;should notice missing date_end&#39; do</code>
           </li>
         </div>
       
@@ -4877,7 +4877,7 @@
 
             
 
-            <code class="ruby">    get list_by_date_url, params: { date: &#39;2021-12-12&#39; }</code>
+            <code class="ruby">    movie = Movie.create(title: &#39;La ciudad perdida&#39;, image: &#39;https://www.ecartelera.com/carteles/17000/17009/001_p.jpg&#39;)</code>
           </li>
         </div>
       
@@ -4888,7 +4888,7 @@
 
             
 
-            <code class="ruby">    assert_response :success</code>
+            <code class="ruby">    post create_movie_time_url, params: { movie_time: </code>
           </li>
         </div>
       
@@ -4899,7 +4899,7 @@
 
             
 
-            <code class="ruby">  end</code>
+            <code class="ruby">      {</code>
           </li>
         </div>
       
@@ -4910,29 +4910,29 @@
 
             
 
-            <code class="ruby"></code>
+            <code class="ruby">        movie_id: movie.id, time: &#39;12:00&#39;, date_start: &#39;2021-12-12&#39;, date_end: &#39;&#39;, room: &#39;A&#39;</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="72">
-            <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="72">
+            
             
 
             
 
-            <code class="ruby">  test &#39;should list by date with params and movie&#39; do</code>
+            <code class="ruby">      } }</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="73">
-            <span class="hits">1</span>
+          <li class="missed" data-hits="0" data-linenumber="73">
+            
             
 
             
 
-            <code class="ruby">    movie = Movie.create(title: &#39;La ciudad perdida&#39;, image: &#39;https://www.ecartelera.com/carteles/17000/17009/001_p.jpg&#39;)</code>
+            <code class="ruby">    assert_response :redirect</code>
           </li>
         </div>
       
@@ -4943,34 +4943,12 @@
 
             
 
-            <code class="ruby">    MovieTime.create(movie_id: movie.id, time: &#39;12:00&#39;, date_start: &#39;2021-12-12&#39;, date_end: &#39;2021-12-12&#39;, room: &#39;A&#39;)</code>
+            <code class="ruby">    assert_equal &#39;Falta la fecha final&#39;, flash[:notice]</code>
           </li>
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="75">
-            
-            
-
-            
-
-            <code class="ruby">    get list_by_date_url, params: { date: &#39;2021-12-12&#39; }</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="missed" data-hits="0" data-linenumber="76">
-            
-            
-
-            
-
-            <code class="ruby">    assert_response :success</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="77">
+          <li class="never" data-hits="" data-linenumber="75">
             
             
 
@@ -4981,7 +4959,227 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="78">
+          <li class="never" data-hits="" data-linenumber="76">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="77">
+            
+            
+
+            
+
+            <code class="ruby">  # test list by date</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="78">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  test &#39;should list by date&#39; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="79">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    get list_by_date_url</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="80">
+            
+            
+
+            
+
+            <code class="ruby">    assert_response :success</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="81">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="82">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="83">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  test &#39;should list by date with params&#39; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="84">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    get list_by_date_url, params: { date: &#39;2021-12-12&#39; }</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="85">
+            
+            
+
+            
+
+            <code class="ruby">    assert_response :success</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="86">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="87">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="88">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  test &#39;should list by date with params and movie&#39; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="89">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    movie = Movie.create(title: &#39;La ciudad perdida&#39;, image: &#39;https://www.ecartelera.com/carteles/17000/17009/001_p.jpg&#39;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="90">
+            
+            
+
+            
+
+            <code class="ruby">    MovieTime.create(</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="91">
+            
+            
+
+            
+
+            <code class="ruby">      movie_id: movie.id, time: &#39;12:00&#39;, date_start: &#39;2021-12-12&#39;, date_end: &#39;2021-12-12&#39;, room: &#39;A&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="92">
+            
+            
+
+            
+
+            <code class="ruby">    )</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="93">
+            
+            
+
+            
+
+            <code class="ruby">    get list_by_date_url, params: { date: &#39;2021-12-12&#39; }</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="94">
+            
+            
+
+            
+
+            <code class="ruby">    assert_response :success</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="95">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="96">
             
             
 
@@ -6171,29 +6369,29 @@
 
             
 
-            <code class="ruby">    patch store_url(stores(:one)), params: { store: { name: &#39;test&#39;, price: 1, category: &#39;Drink&#39;, volume: 1 } }</code>
+            <code class="ruby">    patch store_url(stores(:one)), params: </code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="45">
-            <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="45">
+            
             
 
             
 
-            <code class="ruby">    assert_redirected_to stores_url</code>
+            <code class="ruby">    {</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="46">
-            <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="46">
+            
             
 
             
 
-            <code class="ruby">    assert_equal &#39;store was successfully updated.&#39;, flash[:notice]</code>
+            <code class="ruby">      store: { name: &#39;test&#39;, price: 1, category: &#39;Drink&#39;, volume: 1 }</code>
           </li>
         </div>
       
@@ -6204,7 +6402,7 @@
 
             
 
-            <code class="ruby"></code>
+            <code class="ruby">    }</code>
           </li>
         </div>
       
@@ -6215,7 +6413,7 @@
 
             
 
-            <code class="ruby">    patch store_url(stores(:one)), params: { store: { name: &#39;test&#39;, price: 1, category: &#39;Food&#39;, weight: 1 } }</code>
+            <code class="ruby">    assert_redirected_to stores_url</code>
           </li>
         </div>
       
@@ -6226,23 +6424,12 @@
 
             
 
-            <code class="ruby">    assert_redirected_to stores_url</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="50">
-            <span class="hits">1</span>
-            
-
-            
-
             <code class="ruby">    assert_equal &#39;store was successfully updated.&#39;, flash[:notice]</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="51">
+          <li class="never" data-hits="" data-linenumber="50">
             
             
 
@@ -6253,46 +6440,57 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="52">
+          <li class="covered" data-hits="1" data-linenumber="51">
             <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">    patch store_url(stores(:one)), params: { store: { name: &#39;test&#39;, price: 1, category: &#39;Souvenir&#39; } }</code>
+            <code class="ruby">    patch store_url(stores(:one)), params:</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="53">
+          <li class="never" data-hits="" data-linenumber="52">
+            
+            
+
+            
+
+            <code class="ruby">    {</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="53">
+            
+            
+
+            
+
+            <code class="ruby">      store: { name: &#39;test&#39;, price: 1, category: &#39;Food&#39;, weight: 1 }</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="54">
+            
+            
+
+            
+
+            <code class="ruby">    }</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="55">
             <span class="hits">1</span>
             
 
             
 
             <code class="ruby">    assert_redirected_to stores_url</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="54">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    assert_equal &#39;store was successfully updated.&#39;, flash[:notice]</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="55">
-            
-            
-
-            
-
-            <code class="ruby"></code>
           </li>
         </div>
       
@@ -6303,23 +6501,12 @@
 
             
 
-            <code class="ruby">    patch store_url(stores(:one)), params: { store: { name: &#39;test&#39;, price: 1, category: &#39;Drink&#39;, volume: 1, weight: 1 } }</code>
+            <code class="ruby">    assert_equal &#39;store was successfully updated.&#39;, flash[:notice]</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="57">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    assert_redirected_to stores_url</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="58">
+          <li class="never" data-hits="" data-linenumber="57">
             
             
 
@@ -6330,24 +6517,35 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="59">
+          <li class="covered" data-hits="1" data-linenumber="58">
             <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">    patch store_url(stores(:one)), params: { store: { name: &#39;test&#39;, price: 1, category: &#39;Food&#39;, volume: 1 } }</code>
+            <code class="ruby">    patch store_url(stores(:one)), params:</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="60">
-            <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="59">
+            
             
 
             
 
-            <code class="ruby">    assert_redirected_to stores_url</code>
+            <code class="ruby">    {</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="60">
+            
+            
+
+            
+
+            <code class="ruby">      store: { name: &#39;test&#39;, price: 1, category: &#39;Souvenir&#39; }</code>
           </li>
         </div>
       
@@ -6358,7 +6556,7 @@
 
             
 
-            <code class="ruby"></code>
+            <code class="ruby">    }</code>
           </li>
         </div>
       
@@ -6369,7 +6567,7 @@
 
             
 
-            <code class="ruby">    patch store_url(stores(:one)), params: { store: { name: &#39;test&#39;, price: 1, category: &#39;Souvenir&#39;, volume: 1, weight: 1 } }</code>
+            <code class="ruby">    assert_redirected_to stores_url</code>
           </li>
         </div>
       
@@ -6380,7 +6578,7 @@
 
             
 
-            <code class="ruby">    assert_redirected_to stores_url</code>
+            <code class="ruby">    assert_equal &#39;store was successfully updated.&#39;, flash[:notice]</code>
           </li>
         </div>
       
@@ -6391,67 +6589,56 @@
 
             
 
-            <code class="ruby">  end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="65">
-            
-            
-
-            
-
             <code class="ruby"></code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="66">
+          <li class="covered" data-hits="1" data-linenumber="65">
             <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">  test &#39;should destroy store&#39; do</code>
+            <code class="ruby">    patch store_url(stores(:one)), params:</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="67">
-            <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="66">
+            
             
 
             
 
-            <code class="ruby">    assert_difference(&#39;Store.count&#39;, -1) do</code>
+            <code class="ruby">    {</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="68">
-            <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="67">
+            
             
 
             
 
-            <code class="ruby">      delete store_url(stores(:one))</code>
+            <code class="ruby">      store: { name: &#39;test&#39;, price: 1, category: &#39;Drink&#39;, volume: 1, weight: 1 }</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="69">
+          <li class="never" data-hits="" data-linenumber="68">
             
             
 
             
 
-            <code class="ruby">    end</code>
+            <code class="ruby">    }</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="70">
+          <li class="covered" data-hits="1" data-linenumber="69">
             <span class="hits">1</span>
             
 
@@ -6462,29 +6649,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="71">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    assert_equal &#39;store was successfully destroyed.&#39;, flash[:notice]</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="72">
-            
-            
-
-            
-
-            <code class="ruby">  end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="73">
+          <li class="never" data-hits="" data-linenumber="70">
             
             
 
@@ -6495,7 +6660,238 @@
         </div>
       
         <div>
+          <li class="covered" data-hits="1" data-linenumber="71">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    patch store_url(stores(:one)), params:</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="72">
+            
+            
+
+            
+
+            <code class="ruby">    {</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="73">
+            
+            
+
+            
+
+            <code class="ruby">      store: { name: &#39;test&#39;, price: 1, category: &#39;Food&#39;, volume: 1 }</code>
+          </li>
+        </div>
+      
+        <div>
           <li class="never" data-hits="" data-linenumber="74">
+            
+            
+
+            
+
+            <code class="ruby">    }</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="75">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    assert_redirected_to stores_url</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="76">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="77">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    patch store_url(stores(:one)), params:</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="78">
+            
+            
+
+            
+
+            <code class="ruby">    {</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="79">
+            
+            
+
+            
+
+            <code class="ruby">      store: { name: &#39;test&#39;, price: 1, category: &#39;Souvenir&#39;, volume: 1, weight: 1 }</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="80">
+            
+            
+
+            
+
+            <code class="ruby">    }</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="81">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    assert_redirected_to stores_url</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="82">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="83">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="84">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  test &#39;should destroy store&#39; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="85">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    assert_difference(&#39;Store.count&#39;, -1) do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="86">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      delete store_url(stores(:one))</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="87">
+            
+            
+
+            
+
+            <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="88">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    assert_redirected_to stores_url</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="89">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    assert_equal &#39;store was successfully destroyed.&#39;, flash[:notice]</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="90">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="91">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="92">
             
             
 

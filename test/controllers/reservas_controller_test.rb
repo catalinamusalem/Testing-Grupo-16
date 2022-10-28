@@ -54,5 +54,5 @@ class ReservasControllerTest < ActionDispatch::IntegrationTest
     post new_reserva_url(5, '2000-11-12', 'TANDA'),
          params: { reservation_seats: 'C-3', name: 'Diego' }
     assert_response :redirect
-  end 
+  end
 end

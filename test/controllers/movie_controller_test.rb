@@ -47,8 +47,8 @@ class MovieControllerTest < ActionDispatch::IntegrationTest
   end
 
   test 'should notice missing movie' do
-    post create_movie_time_url, params: { movie_time: 
-      { 
+    post create_movie_time_url, params: { movie_time:
+      {
         movie_id: '', time: '12:00', date_start: '2021-12-12', date_end: '2021-12-12', room: 'A'
       } }
     assert_response :redirect
@@ -57,8 +57,8 @@ class MovieControllerTest < ActionDispatch::IntegrationTest
 
   test 'should notice missing date_start' do
     movie = Movie.create(title: 'La ciudad perdida', image: 'https://www.ecartelera.com/carteles/17000/17009/001_p.jpg')
-    post create_movie_time_url, params: { movie_time: 
-      { 
+    post create_movie_time_url, params: { movie_time:
+      {
         movie_id: movie.id, time: '12:00', date_start: '', date_end: '2021-12-12', room: 'A'
       } }
     assert_equal 'Falta la fecha inicial', flash[:notice]
@@ -66,7 +66,7 @@ class MovieControllerTest < ActionDispatch::IntegrationTest
 
   test 'should notice missing date_end' do
     movie = Movie.create(title: 'La ciudad perdida', image: 'https://www.ecartelera.com/carteles/17000/17009/001_p.jpg')
-    post create_movie_time_url, params: { movie_time: 
+    post create_movie_time_url, params: { movie_time:
       {
         movie_id: movie.id, time: '12:00', date_start: '2021-12-12', date_end: '', room: 'A'
       } }

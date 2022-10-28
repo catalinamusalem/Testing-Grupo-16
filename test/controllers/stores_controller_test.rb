@@ -39,9 +39,9 @@ class StoresControllerTest < ActionDispatch::IntegrationTest
     get edit_store_url(stores(:one))
     assert_response :success
   end
-  
+
   test 'should update store' do
-    patch store_url(stores(:one)), params: 
+    patch store_url(stores(:one)), params:
     {
       store: { name: 'test', price: 1, category: 'Drink', volume: 1 }
     }
@@ -88,5 +88,4 @@ class StoresControllerTest < ActionDispatch::IntegrationTest
     assert_redirected_to stores_url
     assert_equal 'store was successfully destroyed.', flash[:notice]
   end
-
 end
