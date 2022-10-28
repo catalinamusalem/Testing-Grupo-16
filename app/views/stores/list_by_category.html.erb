@@ -1,17 +1,17 @@
 <p class="title is-3 has-text-centered">Stores de <%= @category%></p>
-<div class="header">
-    <h1>Products<h1>
-    <h1 align="right"><%= link_to "New Product",
-                new_store_path,
-                class: "btn btn--primary" %><h1>
-    <div id="myBtnContainer">
-      <button class="btn active" onclick="filterSelection('all')"> Show all</button>
-      <button class="btn" onclick="filterSelection('drinks')"> Drinks</button>
-      <button class="btn" onclick="filterSelection('food')"> Food</button>
-      <button class="btn" onclick="filterSelection('souvenir')"> Souvenirs</button>
-    </div>
+    <div class="header">
+        <h1>Products<h1>
+        <h1 align="right"><%= link_to "New Product",
+                    new_store_path,
+                    class: "btn btn--primary" %><h1>
+        <div id="myBtnContainer">
+        <button class="btn active" onclick=<%= link_to store, store_path(store) %>> Show all</button>
+        <button class="btn" onclick="filterSelection('drinks')"> Drinks</button>
+        <button class="btn" onclick="filterSelection('food')"> Food</button>
+        <button class="btn" onclick="filterSelection('souvenir')"> Souvenirs</button>
+        </div>
 
-  </div>
+    </div>
     <% @filter.each do |store|%>
         <div class="filterDiv <%=store.category%>">
             <%= link_to store.name, store_path(store) %>
@@ -24,7 +24,7 @@
                         edit_store_path(store),
                         class: "btn btn--light" %>
             </div>
-      </div>
+    </div>
     <% end %>
 <div class="columns is-centered">
   <div class="column"></div>
