@@ -28,6 +28,10 @@ class StoresControllerTest < ActionDispatch::IntegrationTest
       post stores_url, params: { store: { name: 'test', price: 1, category: 'Souvenir' } }
     end
     assert_redirected_to stores_url
+
+    assert_no_difference 'Store.count' do
+      post stores_url, params: { store: { name: 'test', price: 1 } }
+    end
   end
 
   test 'should show store' do
@@ -64,21 +68,9 @@ class StoresControllerTest < ActionDispatch::IntegrationTest
 
     patch store_url(stores(:one)), params:
     {
-      store: { name: 'test', price: 1, category: 'Drink', volume: 1, weight: 1 }
+      store: { name: 'test', price: 1, category: 'Drink', volume: '', weight: 1 }
     }
-    assert_redirected_to stores_url
-
-    patch store_url(stores(:one)), params:
-    {
-      store: { name: 'test', price: 1, category: 'Food', volume: 1 }
-    }
-    assert_redirected_to stores_url
-
-    patch store_url(stores(:one)), params:
-    {
-      store: { name: 'test', price: 1, category: 'Souvenir', volume: 1, weight: 1 }
-    }
-    assert_redirected_to stores_url
+    assert_response :success
   end
 
   test 'should destroy store' do

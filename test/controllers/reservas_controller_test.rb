@@ -16,10 +16,8 @@ class ReservasControllerTest < ActionDispatch::IntegrationTest
     Movie.destroy_all
   end
   test 'should get new reserva' do
-    assert_difference 'Reserva.count' do
-      post new_reserva_url(5, '2000-11-12', 'TANDA'),
-           params: { reservation_seats: 'C-3', name: 'Diego' }
-    end
+    get new_reserva_url(5, '2000-11-12', 'TANDA')
+    assert_response :success
   end
 
   test 'should detect invalid name parameter' do
@@ -47,6 +45,20 @@ class ReservasControllerTest < ActionDispatch::IntegrationTest
     assert_no_difference 'Reserva.count' do
       post new_reserva_url(5, '2000-11-12', 'TANDA2'),
            params: { reservation_seats: 'C-3', name: 'Diego' }
+    end
+  end
+
+  test 'should detect invalid seats parameter' do
+    assert_no_difference 'Reserva.count' do
+      post new_reserva_url(5, '2000-11-12', 'TANDA2'),
+           params: { reservation_seats: '', name: 'Diego' }
+    end
+  end
+
+  test 'test many seats' do
+    assert_no_difference 'Reserva.count' do
+      post new_reserva_url(5, '2000-11-12', 'TANDA2'),
+           params: { reservation_seats: 'C-1,C-2,C-3', name: 'Diego' }
     end
   end
 

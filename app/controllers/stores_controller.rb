@@ -29,24 +29,6 @@ class StoresController < ApplicationController
       store_params_fixed['volume'] = nil
       store_params_fixed['weight'] = nil
 
-      # # if store_params['category'] == 'Drink'
-      # #   store_params_fixed = { 'name' => store_params['name'], 'price' => store_params['price'],
-      # #                          'category' => store_params['category'],
-      # #                          'volume' => store_params['volume'], 'weight' => nil }
-
-      # # end
-      # # if store_params['category'] == 'Food'
-      # #   store_params_fixed = { 'name' => store_params['name'], 'price' => store_params['price'],
-      # #                          'category' => store_params['category'], 'volume' => nil,
-      # #                          'weight' => store_params['weight'] }
-
-      # # end
-
-      # # if store_params['category'] == 'Souvenir'
-      # #   store_params_fixed = { 'name' => store_params['name'], 'price' => store_params['price'],
-      # #                          'category' => store_params['category'], 'volume' => nil,
-      # #                          'weight' => nil }
-
     end
 
     @store = Store.new(store_params_fixed)
