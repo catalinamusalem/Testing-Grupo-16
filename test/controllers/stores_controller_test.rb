@@ -41,25 +41,43 @@ class StoresControllerTest < ActionDispatch::IntegrationTest
   end
   
   test 'should update store' do
-    patch store_url(stores(:one)), params: { store: { name: 'test', price: 1, category: 'Drink', volume: 1 } }
+    patch store_url(stores(:one)), params: 
+    {
+      store: { name: 'test', price: 1, category: 'Drink', volume: 1 }
+    }
     assert_redirected_to stores_url
     assert_equal 'store was successfully updated.', flash[:notice]
 
-    patch store_url(stores(:one)), params: { store: { name: 'test', price: 1, category: 'Food', weight: 1 } }
+    patch store_url(stores(:one)), params:
+    {
+      store: { name: 'test', price: 1, category: 'Food', weight: 1 }
+    }
     assert_redirected_to stores_url
     assert_equal 'store was successfully updated.', flash[:notice]
 
-    patch store_url(stores(:one)), params: { store: { name: 'test', price: 1, category: 'Souvenir' } }
+    patch store_url(stores(:one)), params:
+    {
+      store: { name: 'test', price: 1, category: 'Souvenir' }
+    }
     assert_redirected_to stores_url
     assert_equal 'store was successfully updated.', flash[:notice]
 
-    patch store_url(stores(:one)), params: { store: { name: 'test', price: 1, category: 'Drink', volume: 1, weight: 1 } }
+    patch store_url(stores(:one)), params:
+    {
+      store: { name: 'test', price: 1, category: 'Drink', volume: 1, weight: 1 }
+    }
     assert_redirected_to stores_url
 
-    patch store_url(stores(:one)), params: { store: { name: 'test', price: 1, category: 'Food', volume: 1 } }
+    patch store_url(stores(:one)), params:
+    {
+      store: { name: 'test', price: 1, category: 'Food', volume: 1 }
+    }
     assert_redirected_to stores_url
 
-    patch store_url(stores(:one)), params: { store: { name: 'test', price: 1, category: 'Souvenir', volume: 1, weight: 1 } }
+    patch store_url(stores(:one)), params:
+    {
+      store: { name: 'test', price: 1, category: 'Souvenir', volume: 1, weight: 1 }
+    }
     assert_redirected_to stores_url
   end
 
