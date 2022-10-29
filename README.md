@@ -16,3 +16,8 @@ DB_USER: '{user}'
 
 DB_PASSWORD: '{password}'
 
+Para la entrega 2 se utilizó la rama e2, donde todo el comportamiento de stores en frontend se puede acceder desde la rama en el link de deploy:
+https://powerful-wildwood-80309.herokuapp.com/stores
+
+No se pudo realizar el filtro del listado de stores.
+Si se realizó todo el resto. 
