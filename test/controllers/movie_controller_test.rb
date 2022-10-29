@@ -17,14 +17,21 @@ class MovieControllerTest < ActionDispatch::IntegrationTest
   end
 
   test 'should create movie' do
-    post movie_new_url, params: { movie: { title: 'New Movie', image: 'https://www.otroscines.com/images/fotos/las-horas-mas-oscuras-critica-655.jpg' } }
-    assert_response :redirect
+    assert_no_difference 'Movie.count' do
+      post movie_new_url, params: { movie: { title: 'New_movie', image: 'https://www.otroscines.com/images/fotos/las-horas-mas-oscuras-critica-655.jpg' } }
+    end
+  end
+
+  test 'should not create movie' do
+    assert_no_difference 'Movie.count' do
+      post movie_new_url, params: { movie: { title: '' } }
+    end
   end
 
   test 'should create movie time ' do
     post new_movie_time_url,
-         params: { movie_time: { movie_id: 1, time: 'TANDA', date_start: '2020-11-10',
-                                 date_end: '2020-11-12', room: 5 } }
+         params: { movie_time: { movie_id: 1, time: 'TANDA', date_start: '2022-11-10',
+                                 date_end: '2022-11-12', room: 5 } }
     assert_response :redirect
   end
 
