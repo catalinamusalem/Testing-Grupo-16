@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_10_16_004702) do
+ActiveRecord::Schema[7.0].define(version: 2022_11_09_224610) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -50,6 +50,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_10_16_004702) do
     t.date "date_start", null: false
     t.date "date_end", null: false
     t.bigint "movie_id", null: false
+    t.string "sucursal"
     t.index ["movie_id"], name: "index_movie_times_on_movie_id"
   end
 
@@ -58,6 +59,9 @@ ActiveRecord::Schema[7.0].define(version: 2022_10_16_004702) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "image"
+    t.integer "edad"
+    t.string "sucursal"
+    t.string "idioma"
   end
 
   create_table "reservas", force: :cascade do |t|
@@ -68,6 +72,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_10_16_004702) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "name"
+    t.string "sucursal"
     t.index ["sala", "fecha", "asiento", "horario"], name: "index_reservas_on_sala_and_fecha_and_asiento_and_horario", unique: true
   end
 

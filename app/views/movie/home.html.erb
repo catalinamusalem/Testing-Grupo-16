@@ -17,7 +17,43 @@
             <%= form.label :query, "Día: ", class: 'label' %>
           </div>
           <%= form.date_field :date , class: 'input', required: 'required', min: Date.today%>
+          
         </div>
+        <div class="field is-horizontal">
+          <div class="field-label is-medium">
+            <%= form.label :edad, "Edad: ", class: 'label' %>
+          </div>
+          <%= form.number_field :edad , class: 'input', required: 'required'%>
+          
+        </div>
+       
+        <div class="field is-horizontal">
+          <div class="field-label is-medium">
+            <%= form.label :query, "Sucursal: ", class: 'label' %>
+            
+          <%= form.radio_button :sucursal , "Santiago" %>
+          <%= form.label :sucursal_v , "Santiago" %>
+          <%= form.radio_button :sucursal , "Regional" %>
+          <%= form.label :sucursal_v , "Regional" %>
+          
+          </div>
+        </div>
+
+        <div class="field is-horizontal">
+          <div class="field-label is-medium">
+            <%= form.label :query, "Idioma: ", class: 'label' %>
+            
+          
+          <%= form.radio_button :idioma , "Español" %>
+          <%= form.label :idioma_v , "Español" %>
+
+          <%= form.radio_button :idioma , "Inglés" %>
+          <%= form.label :idioma_v , "Inglés" %>
+          </div>
+          
+        </div>
+
+        
         <%= form.submit "Buscar" , class: "button is-rounded is-link"%>
       <% end %>
 
