@@ -4,10 +4,11 @@ require 'test_helper'
 
 class ReservaTest < ActiveSupport::TestCase
   def setup
-    movie = Movie.create(title: 'Movie')
+    movie = Movie.create(title: 'Movie', edad: '20', idioma: 'Inglés')
+
     MovieTime.create(room: 5, date_start: Date.new(2022, 10, 10),
                      date_end: Date.new(2022, 10, 12),
-                     time: 'TANDA', movie_id: movie.id)
+                     time: 'TANDA', movie_id: movie.id, sucursal: 'Santiago')
     @reserva = Reserva.create(sala: 5, fecha: Date.new(2022, 10, 11), asiento: 10, horario: 'TANDA',
                               name: 'Pedro')
   end

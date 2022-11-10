@@ -12,7 +12,9 @@ class MovieTime < ApplicationRecord
   validates :date_start, presence: { message: 'Falta la fecha inicial' }
   validates :date_end, presence: { message: 'Falta la fecha final' }
   validates :movie_id, presence: { message: 'Falta elegir una pelicula' }
-  validates :sucursal, presence: { message: 'Falta elegir una sucursal' }
+  validates :sucursal, presence: { message: 'Falta elegir una sucursal' },
+                       inclusion: { in: %w[Santiago Regional], message:
+                       '%<value>s no es un idioma valido' }
   validate :validate_date
 
   def validate_date
