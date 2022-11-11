@@ -81,3 +81,4 @@ group :test do
   gem 'simplecov'
   gem 'webdrivers'
 end
+gem "rspec-rails", group: [:development, :test]

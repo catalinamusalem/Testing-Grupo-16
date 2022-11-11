@@ -841,5 +841,438 @@
       }
     },
     "timestamp": 1668120723
+  },
+  "RSpec": {
+    "coverage": {
+      "/home/rociomartinez/Testing-Grupo-16/app/helpers/application_helper.rb": {
+        "lines": [
+          null,
+          null,
+          null,
+          1,
+          null
+        ]
+      },
+      "/home/rociomartinez/Testing-Grupo-16/app/helpers/movie_helper.rb": {
+        "lines": [
+          null,
+          null,
+          null,
+          1,
+          null
+        ]
+      },
+      "/home/rociomartinez/Testing-Grupo-16/app/helpers/reservas_helper.rb": {
+        "lines": [
+          null,
+          null,
+          null,
+          1,
+          null
+        ]
+      },
+      "/home/rociomartinez/Testing-Grupo-16/app/helpers/stores_helper.rb": {
+        "lines": [
+          null,
+          null,
+          null,
+          1,
+          null
+        ]
+      },
+      "/home/rociomartinez/Testing-Grupo-16/app/models/movie.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null,
+          1,
+          null,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
+      "/home/rociomartinez/Testing-Grupo-16/app/models/application_record.rb": {
+        "lines": [
+          null,
+          null,
+          null,
+          1,
+          1,
+          null
+        ]
+      },
+      "/home/rociomartinez/Testing-Grupo-16/app/models/movie_time.rb": {
+        "lines": [
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          null,
+          1,
+          64,
+          null,
+          64,
+          0,
+          null,
+          null,
+          null,
+          64,
+          null,
+          64,
+          null,
+          64,
+          0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/home/rociomartinez/Testing-Grupo-16/app/controllers/movie_controller.rb": {
+        "lines": [
+          null,
+          null,
+          null,
+          1,
+          1,
+          null,
+          1,
+          0,
+          null,
+          null,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          null,
+          null,
+          null,
+          1,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          null,
+          null,
+          null,
+          1,
+          8,
+          8,
+          8,
+          8,
+          8,
+          4,
+          null,
+          4,
+          null,
+          null,
+          null,
+          null,
+          8,
+          null,
+          null,
+          null,
+          8,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/home/rociomartinez/Testing-Grupo-16/app/controllers/application_controller.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          null
+        ]
+      },
+      "/home/rociomartinez/Testing-Grupo-16/app/channels/application_cable/channel.rb": {
+        "lines": [
+          null,
+          null,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/rociomartinez/Testing-Grupo-16/app/channels/application_cable/connection.rb": {
+        "lines": [
+          null,
+          null,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/rociomartinez/Testing-Grupo-16/app/controllers/reservas_controller.rb": {
+        "lines": [
+          null,
+          null,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/rociomartinez/Testing-Grupo-16/app/controllers/stores_controller.rb": {
+        "lines": [
+          null,
+          null,
+          null,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          null,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/rociomartinez/Testing-Grupo-16/app/jobs/application_job.rb": {
+        "lines": [
+          null,
+          null,
+          0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/rociomartinez/Testing-Grupo-16/app/mailers/application_mailer.rb": {
+        "lines": [
+          null,
+          null,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/rociomartinez/Testing-Grupo-16/app/models/reserva.rb": {
+        "lines": [
+          null,
+          null,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/rociomartinez/Testing-Grupo-16/app/models/room.rb": {
+        "lines": [
+          null,
+          null,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/rociomartinez/Testing-Grupo-16/app/models/store.rb": {
+        "lines": [
+          null,
+          null,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      }
+    },
+    "timestamp": 1668178092
   }
 }
