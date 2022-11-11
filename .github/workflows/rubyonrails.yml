@@ -38,7 +38,7 @@ jobs:
           bundle install --jobs 4 --retry 3
           bundle exec rails db:create
           bundle exec rails db:migrate
-          RAILS_ENV=test bundle exec rake
+          RAILS_ENV=test rails test
       - name: Ruby SimpleCov
         # You may pin to the exact commit or the version.
         # uses: d1ceward/ruby-simplecov-action@76a6851a3de41b204e55893e6e2afe9982ecb291
