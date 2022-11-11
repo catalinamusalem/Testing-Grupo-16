@@ -23,6 +23,7 @@ Rails/NotNullColumn:
 
 Metrics/BlockLength:
   Exclude:
+    - 'spec/**/*'
     - 'test/**/*'
 
 Style/Documentation:
@@ -32,3 +33,7 @@ Style/Documentation:
 
 Rails/I18nLocaleTexts:
   Enabled: false
+
+Lint/Void:
+  Exclude:
+  - 'spec/**/*'
