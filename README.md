@@ -1,5 +1,5 @@
 # Proyecto DCCinema Grupo 16
-#### Entrega: 1
+#### URL Entrega: 
 #### Url Heroku: https://powerful-wildwood-80309.herokuapp.com/
 
 
@@ -16,11 +16,9 @@ DB_USER: '{user}'
 
 DB_PASSWORD: '{password}'
 
-Para la entrega 2 se utilizó la rama e2, donde todo el comportamiento de stores en frontend se puede acceder desde la rama en el link de deploy:
-https://powerful-wildwood-80309.herokuapp.com/stores
 
-No se pudo realizar el filtro del listado de stores.
-Si se realizó todo el resto. 
 
 
 Para la entrega 3 se utilizó la rama E3, donde se hizo todo lo explicitado en entregas mínimas. El coverage de simpleCov es de 99.4%, que corresponde a una deficiencia del coverage de la entrega pasada, fuera de eso se encuentra todo en orden con esta entrega.
+
+El documento de la tabla de decision esta en la base del repositorio con el nombre Tabla_de_verdad.pdf
