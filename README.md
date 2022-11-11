@@ -21,3 +21,6 @@ https://powerful-wildwood-80309.herokuapp.com/stores
 
 No se pudo realizar el filtro del listado de stores.
 Si se realizó todo el resto. 
+
+
+Para la entrega 3 se utilizó la rama E3, donde se hizo todo lo explicitado en entregas mínimas. El coverage de simpleCov es de 99.4%, que corresponde a una deficiencia del coverage de la entrega pasada, fuera de eso se encuentra todo en orden con esta entrega.
